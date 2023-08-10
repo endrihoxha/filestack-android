@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.dcendents.android-maven' version '2.0'
+    //id 'com.github.dcendents.android-maven' version '2.0'
     id 'com.jfrog.bintray' version '1.7.3'
 }
 
@@ -11,11 +11,11 @@ version = '5.3.0'
 project.archivesBaseName = 'filestack-android'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 33
         versionCode 1
         versionName version
 
