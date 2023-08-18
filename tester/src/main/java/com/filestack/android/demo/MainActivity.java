@@ -94,6 +94,16 @@ public class MainActivity extends AppCompatActivity {
                 .multipleFilesSelectionEnabled(sharedPref.getBoolean("allow_multiple_files", true))
                 .theme(theme)
                 .build();
+
+//        FilestackPicker picker = new FilestackPicker.Builder()
+//                .config(config)
+//                    .storageOptions(...)
+//                    .autoUploadEnabled(sharedPref.getBoolean("auto_upload", false))
+//                    .sources(new ArrayList<>(sharedPref.getStringSet("upload_sources", Collections.<String>emptySet())))
+//                    .mimeTypes(mimeTypes)
+//                    .multipleFilesSelectionEnabled(sharedPref.getBoolean("allow_multiple_files", true)
+//                    .displayVersionInformation(...)
+//                    .build();
         picker.launch(this);
     }
 }
